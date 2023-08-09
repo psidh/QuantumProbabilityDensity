@@ -1,6 +1,6 @@
 # Quantum Probability Density Visualization
 
-This Python script allows you to visualize the probability density of a quantum wavefunction using matplotlib. The wavefunction used in this script is assumed to be a simple Gaussian wavefunction for visualization purposes.
+This Jupyter Notebook code allows you to visualize the probability density of a complex quantum wavefunction using the `matplotlib` library. The script creates a 3D surface plot to depict the quantum probability density distribution.
 
 ## Prerequisites
 
@@ -11,38 +11,30 @@ This Python script allows you to visualize the probability density of a quantum 
 ## Installation
 
 You can install the required dependencies using pip:
-
+```python
+!pip install numpy matplotlib
+```
 
 ## Usage
 
-1. Clone this repository or download the `quantum_probability_density.py` file.
+1. Run the following cell to define the necessary functions.
 
-2. Run the script from the terminal or command prompt:
+2. Create a new cell and run the code. You will be prompted to enter the range and number of points for the x-axis, as well as parameters for the complex wavefunction.
 
-
-3. Follow the on-screen prompts to input the range and points for the x-axis and parameters for the Gaussian wavefunction.
-
-4. The script will plot the quantum probability density and display it using `matplotlib`.
+3. The 3D plot of the complex quantum probability density will be displayed directly below the code cell.
 
 ## How it works
 
-The script takes user inputs for the range and number of points on the x-axis and parameters for the Gaussian wavefunction, such as mean and standard deviation. It then generates x values and calculates the corresponding wavefunction using the Gaussian formula. The wavefunction is then normalized, and the probability density is computed and visualized using matplotlib.
+The code uses the provided `complex_wavefunction` function to calculate a complex wavefunction as a superposition of two Gaussian wavefunctions along the x and y directions. It then generates the x and y values, calculates the wavefunction, and computes the probability density. The `quantum_probability_density_3d` function creates a 3D plot using `matplotlib`.
 
 ## Example
 
-Here's an example of running the script:
+Here's an example of how to run the code:
 
-- Enter the range and points for x
-- Enter the minimum value of x: -5
-- Enter the maximum value of x: 5
-- Enter the number of points: 1000
+1. Enter the range and points for the x and y axes.
+2. Enter the mean and standard deviation of the Gaussian wavefunction for both x and y directions.
 
-- Enter parameters for the Gaussian wavefunction:
-- Enter the mean of the Gaussian wavefunction: 0
-- Enter the standard deviation of the Gaussian wavefunction: 1
-
-
-The script will display a plot showing the probability density of the Gaussian wavefunction centered around 0.
+The script will display a 3D plot showing the complex quantum probability density distribution resulting from the superposition of the Gaussian wavefunctions.
 
 ## Contributing
 
